@@ -1,6 +1,5 @@
 import React from 'react';
-import './index.css';
-import { FaFacebook } from 'react-icons/fa';
+// import { FaFacebook } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 

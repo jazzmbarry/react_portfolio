@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary: red;
+  --secondary: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--secondary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(55,55,55);
+  background: radial-gradient(circle at 90% 90%, rgba(55,55,55,1) 0%, rgba(0,0,0,1) 100%);
+  min-height: 100vh;
+  max-width: 55vw;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 72vh;
+}
+
+.btn {
+  background-color: var(--primary);
+  border-top-right-radius: 10px;
+  text-decoration: none;
+  border: none;
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  margin-top: 1.5rem;
+  position: relative;
+  transition: color 300ms ease-in-out;
+}
+
+/* button animation */
+
+.portfolio-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--secondary);
+  border-top-right-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+}
+
+.portfolio-btn:hover::before {
+  transform: scaleX(1);
+}
+
+.portfolio-btn {
+  z-index: 1;
+}
+
+.portfolio-btn:hover {
+  color: var(--primary);
+}
+
+/* button animation */
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 90vw;
+  } 
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    min-height: 65vh;
+  }
+  .flex-container {
+    display: block;
+  }
+  .name-container {
+    height: 20vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: none;
+    margin: 0 3rem 3rem 3rem;
+  }
+
+  .btn {
+    width: 80%;
+    margin: 0 3rem;
+  }
+
+  .flex-container {
+    align-items: center;
+  }
 }

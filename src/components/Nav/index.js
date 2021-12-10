@@ -1,25 +1,29 @@
 // used to conditionally render About, Portfolio, Contact and Resume
-import React from "react";
+import React from 'react';
 
 export default function Nav(props) {
-  const { currentTab, setCurrentTab } = props;
+    const tabs = ['About', 'Portfolio', 'Resume', 'Contact'];
 
-  return (
-    <nav>
-      <ul className="flex-row mobile-view">
-        <li className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
-          <span onClick={() => setCurrentTab("about")}>About Me</span>
-        </li>
-        <li className={currentTab === "portfolio" ? "mx-2 navActive" : "mx-2"}>
-          <span onClick={() => setCurrentTab("portfolio")}>Portfolio</span>
-        </li>
-        <li className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
-          <span onClick={() => setCurrentTab("contact")}>Contact</span>
-        </li>
-        <li className={currentTab === "resume" ? "mx-2 navActive" : "mx-2"}>
-          <span onClick={() => setCurrentTab("resume")}>Resume</span>
-        </li>
-      </ul>
-    </nav>
-  );
+    return (
+        <header>
+            <div className="page-location">
+                <h1>{props.currentPage}</h1>
+            </div>
+            <div className="nav-wrapper">
+                <nav className="nav-btns">
+                    <ul>
+                        {tabs.map(tab => (
+                            <a
+                                href={'#' + tab.toLowerCase()}
+                                onClick={() => props.handlePageChange(tab)}
+                                key={tab}
+                            >
+                                {tab}
+                            </a>
+                        ))}
+                    </ul>
+                </nav>
+            </div>
+        </header> 
+    );
 }
