@@ -6,7 +6,7 @@ export default function About() {
             <div className="container">
                 <div className="flex-container">
                     <div className="center" id="about">
-                        <h1 className="page-header">Resourcful learner * Full-Stack Developer * Musician * Personal Trainer</h1>
+                        <h1 className="page-header">Resourceful Learner * Full-Stack Developer * Musician * Personal Trainer</h1>
                     </div>
                     <div className="name-container">
                         <h1 className="name">Matthew Barry</h1>
