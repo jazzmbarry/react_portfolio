@@ -17,7 +17,7 @@ export default function Project() {
                         github_url={project.github_url}
                         github={project.github}
                         description={project.description}
-                        languages={project.languages}
+                        technologies={project.technologies}
                         image={project.image}
                     />
                 ))}

@@ -13,7 +13,7 @@ export default function ProjectCard(props) {
             <ul>
                 <li><b>GitHub:</b> <a href={props.github_url}>{props.github}</a></li>
                 <li><b>Description: </b>{props.description}</li>
-                <li><b>Languages/Tools: </b>{props.languages}</li>
+                <li><b>Technologies/Tools: </b>{props.technologies}</li>
             </ul>
         </div>
     );
