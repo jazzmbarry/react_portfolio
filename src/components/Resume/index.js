@@ -1,5 +1,5 @@
 import React from "react";
-import { Document, Page } from 'react-pdf'
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
 
 import ResumePDF from '../../assets/files/Resume.pdf'
 
@@ -8,14 +8,6 @@ export default function Resume() {
     <section>
       <div className="center">
         <h1 className="page-header">My Resume</h1>
-      </div>
-      <div className="bottom-spacing">
-        <Document file={ResumePDF}>
-          <Page pageNumber={1} />
-        </Document>
-      <a href="../../assets/files/Resume.pdf" download='Resume.pdf'>
-          <h4>Download my Resume</h4>
-        </a> 
       </div>
       <div>
         <h5>Front-End Skills</h5>
@@ -57,6 +49,15 @@ export default function Resume() {
           <li>Mongoose</li>
         </ol>
       </div>
+      <div className="bottom-spacing">
+        <Document file={ResumePDF}>
+          <Page pageNumber={1} />
+        </Document>
+      <a href="../../assets/files/Resume.pdf" download='Resume.pdf'>
+          <h4>Download my Resume</h4>
+        </a> 
+      </div>
+
     </section>
   );
 }

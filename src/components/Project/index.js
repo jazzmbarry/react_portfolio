@@ -22,6 +22,25 @@ const projects =
         "technologies": "JavaScript, NodeJS, Express.js, MySQL2, Sequelize, Dotenv, CSS, HTML",
         "image": the_powder_project
     },
+    // {
+    //     "title": "Portfolio",
+    //     "deploy": "",
+    //     "github_url": "",
+    //     "github": "",
+    //     "description": "",    
+    //     "technologies": "",
+    //     "image": null 
+    // },
+    // {
+    //     "title": "Final Project",
+    //     "deploy": "",
+    //     "github_url": "",
+    //     "github": "",
+    //     "description": "",    
+    //     "technologies": "",
+    //     "image": null
+
+    // }
 ]
 
 export default projects;
