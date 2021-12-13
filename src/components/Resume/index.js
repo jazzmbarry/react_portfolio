@@ -50,14 +50,13 @@ export default function Resume() {
         </ol>
       </div>
       <div className="bottom-spacing">
-        <Document file={ResumePDF}>
+        <Document className={'PDF'} file={ResumePDF}>
           <Page pageNumber={1} />
         </Document>
-      <a href="../../assets/files/Resume.pdf" download='Resume.pdf'>
-          <h4>Download my Resume</h4>
+        <a href="../../assets/files/Resume.jpg" download='Resume.jpg'>
+          <button type="button">Download my Resume</button>
         </a> 
       </div>
-
     </section>
   );
 }

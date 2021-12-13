@@ -6,14 +6,9 @@ export default function Nav(props) {
 
     return (
         <header>
-            <div className="page-location">
-                <h1>{props.currentPage}</h1>
-            </div>
-            <div className="nav-wrapper">
-                <nav className="nav-btns">
-                    <ul>
+        <nav className='row nav-wrapper'>
                         {tabs.map(tab => (
-                            <a
+                            <a   
                                 href={'#' + tab.toLowerCase()}
                                 onClick={() => props.handlePageChange(tab)}
                                 key={tab}
@@ -21,9 +16,7 @@ export default function Nav(props) {
                                 {tab}
                             </a>
                         ))}
-                    </ul>
-                </nav>
-            </div>
+        </nav>
         </header> 
     );
 }

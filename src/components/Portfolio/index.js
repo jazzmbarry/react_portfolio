@@ -4,13 +4,20 @@ import projects from '../Project/index'
 
 export default function Project() {
     return(
-        <section className="container">
-            <div className="other-projects">
-            <h2>Projects:</h2>
+        <section>
+            <div className='row'>
+            <h2 className='column sectionHeader'>
+                Portfolio
+            </h2>
+            </div>
+
+            <div className="row other-projects">
+            <h3 className='column'>Projects</h3>
             </div>
             <div className="projects-container">
                 {projects.map(project => (
-                    <ProjectCard
+                    <ProjectCard 
+                        className="row"
                         key={project.title}
                         title={project.title}
                         deploy={project.deploy}

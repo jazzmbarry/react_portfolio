@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from './components/Header'
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -6,7 +7,10 @@ import Resume from './components/Resume';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
 
+
 function App() {
+
+  
   const [currentPage, handlePageChange] = useState('About');
 
   function renderPage(currentPage) {
@@ -32,6 +36,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
       <main>
         {renderPage(currentPage)}
