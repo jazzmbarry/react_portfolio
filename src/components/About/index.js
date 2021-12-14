@@ -15,7 +15,7 @@ export default function About() {
                         <h3 className="column profession">Full-Stack Web Developer</h3>
                     </div>
                     
-                    <div className="row center">
+                    <div className="row">
                         <h4 className="column">Resourceful Learner</h4>
                         <h4 className="column">Full-Stack Developer</h4>
                         <h4 className="column">Musician</h4>

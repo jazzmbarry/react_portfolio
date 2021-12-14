@@ -17,7 +17,6 @@ export default function Project() {
             <div className="projects-container">
                 {projects.map(project => (
                     <ProjectCard 
-                        className="row"
                         key={project.title}
                         title={project.title}
                         deploy={project.deploy}

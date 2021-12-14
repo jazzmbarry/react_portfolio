@@ -18,7 +18,7 @@ body {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
-  max-width: 55vw;
+  max-width: 70vw;
   margin: auto;
 }
 
@@ -27,19 +27,14 @@ body {
   padding: 5px;
   margin: 5px;
   box-shadow: 0px 0px 5px .5px var(--lightOrange);
-  /* border: .5px solid var(--lightOrange); */
+  border-radius: 5px;  
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.column {
-  background-color: var(--darkBlue);
-  padding: 5px;
-  margin: 5px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+form {
+  width: 100%;
 }
 
 .name {
@@ -55,25 +50,46 @@ body {
   background-color: var(--darkBlue);
 }
 
-
-.nav-wrapper a {
+.nav-wrapper a, .gitRef {
   color: var(--lightOrange);
 }
 
-.nav-wrapper a:hover {
+.nav-wrapper a:hover, .gitRef:hover {
   color: var(--darkGrey);
   background-color: var(--lightOrange);
+  border-radius: 5px;
+
+}
+
+.projectImage {
+  opacity: .5;
+}
+
+.projectImage:hover {
+  opacity: .75;
+  background-color: var(--darkBlue);
 }
 
 .sectionHeader {
   color: var(--lightOrange);
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
   min-height: 72vh;
+}
+
+h5 {
+  text-decoration: underline;
+}
+
+.form {
+  color: var(--lightGrey);
+}
+
+textarea {
+  overflow: auto;
 }
 
 .btn {
@@ -93,46 +109,19 @@ p {
   margin: 5px;
 }
 
-/* .about-section h3 {
-  box-shadow: 0px 5px var(--lightOrange);
-} */
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(0px, -500%);
+}
 
 .footer-wrapper {
   justify-content: space-around;
-  /* box-shadow: none; */
 }
 
-
-/* button animation */
-
-.portfolio-btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-  background-color: var(--secondary);
-  border-top-right-radius: 10px;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 300ms ease-in-out;
+.fa-icon {
+  font-size: 3vw;
 }
-
-.portfolio-btn:hover::before {
-  transform: scaleX(1);
-}
-
-.portfolio-btn {
-  z-index: 1;
-}
-
-.portfolio-btn:hover {
-  color: var(--primary);
-}
-
-/* button animation */
 
 /* media queries */
 

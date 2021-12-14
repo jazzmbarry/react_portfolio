@@ -1,17 +1,27 @@
-import froogalFlyers from '../../assets/project_img/project-1.jpg';
+import Froogal_Flyers from '../../assets/project_img/Froogal-Flyers.jpg';
 import the_powder_project from '../../assets/project_img/the_powder_project.jpg'
+import Portfolio from '../../assets/project_img/portfolio.png'
 
 const projects =
 
 [
     {
+        "title": "Portfolio",
+        "deploy": "www.google.com",
+        "github_url": "https://github.com/jazzmbarry/react_portfolio",
+        "github": "react_portfolio",
+        "description": "My portfolio built with React",    
+        "technologies": "React, JavaScript, CSS-Milligram, HTML",
+        "image": Portfolio 
+    },
+    {
         "title": "Froogal Flyers",
-        "deploy": "https://jazzmbarry.github.io/project-1/",
-        "github_url": "https://github.com/jazzmbarry/project-1",
-        "github": "project-1",
+        "deploy": "https://jazzmbarry.github.io/Froogal-Flyers/",
+        "github_url": "https://github.com/jazzmbarry/Froogal-Flyers",
+        "github": "Froogal-Flyers",
         "description": "Froogal Flyers is a website that will help you find the cheapest flight to where ever you want. It will give you the dates those flights are cheapest and what airlines to look at. It will also give you events and activities to do around the time you select.",
         "technologies": "JavaScript, CSS-Milligram, APIs-SkyScanner and SeatGeak, HTML",
-        "image": froogalFlyers
+        "image": Froogal_Flyers
     },
     {
         "title": "The Powder Project",
@@ -22,15 +32,7 @@ const projects =
         "technologies": "JavaScript, NodeJS, Express.js, MySQL2, Sequelize, Dotenv, CSS, HTML",
         "image": the_powder_project
     },
-    // {
-    //     "title": "Portfolio",
-    //     "deploy": "",
-    //     "github_url": "",
-    //     "github": "",
-    //     "description": "",    
-    //     "technologies": "",
-    //     "image": null 
-    // },
+
     // {
     //     "title": "Final Project",
     //     "deploy": "",

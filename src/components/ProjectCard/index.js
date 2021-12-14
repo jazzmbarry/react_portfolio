@@ -1,21 +1,26 @@
 import React from 'react';
-import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function ProjectCard(props) {
     return(
-        <div className="project-card">
-            <div className="card-header">
-                <a href={props.deploy} target="_blank" rel="noreferrer"><h3>{props.title} {props.deploy !== null && <FaExternalLinkAlt />}</h3></a>
+        <article className=''>
+        <div className="row project-card">
+            <div className="column card-header">
                 <div className="image-container">
-                    <img src={props.image} width="100%" alt={props.title} key={props.title} />
+                <a className='projectImage' href={props.deploy} target="_blank" rel="noreferrer">
+                    <img href={props.deploy} src={props.image} width="100%" alt={props.title} key={props.title} />                    
+                    {/* <h3 className='center'>{props.title}</h3>                     */}
+                    </a>
                 </div>
             </div>
+            </div>
+            <div className='row'>
             <ul>
-                <li><b>GitHub:</b> <a href={props.github_url}>{props.github}</a></li>
-                <li><b>Description: </b>{props.description}</li>
-                <li><b>Technologies/Tools: </b>{props.technologies}</li>
+                <li className='column'><b>GitHub:</b> <a className='gitRef' href={props.github_url}>{props.github}</a></li>
+                <li className='column'><b>Description: </b>{props.description}</li>
+                <li className='column'><b>Technologies/Tools: </b>{props.technologies}</li>
             </ul>
         </div>
+        </article>
     );
 }
 
