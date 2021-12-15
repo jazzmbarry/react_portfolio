@@ -14,7 +14,7 @@
   My portfolio made using React
 
   ## Preview
-  ![Preview](src\assets\project_img\portfolio.png)
+  ![Preview](./src/assets/project_img/portfolio.png)
   
   ## License
   MIT
