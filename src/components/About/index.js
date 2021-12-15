@@ -1,4 +1,5 @@
 import React from 'react'
+import myPic from '../../assets/files/Profile_pic.jpg'
 
 
 export default function About() {
@@ -16,6 +17,7 @@ export default function About() {
                     </div>
                     
                     <div className="row">
+                    <img className='column myPic'src={myPic} alt='Matthew John Barry'/>
                         <h4 className="column">Resourceful Learner</h4>
                         <h4 className="column">Full-Stack Developer</h4>
                         <h4 className="column">Musician</h4>
@@ -25,6 +27,7 @@ export default function About() {
                         <div className="about-section">
                             <h3 className='row'>About Me</h3>
                             <div className='row P1-container'>
+
                             <p className='column aboutP1'>
                                 My name is Matthew Barry. I will complete a coding bootcamp in January 2022(pending). I have a degree in Exercise Science with a minor in Music. I also have three different personal training certificates as well as my CPR/AED First Aid certificate.
                             </p>

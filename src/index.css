@@ -22,6 +22,11 @@ body {
   margin: auto;
 }
 
+.myPic {
+  width: 25%;
+  height: 25%;
+}
+
 .row {
   background-color: var(--darkBlue);
   padding: 5px;
