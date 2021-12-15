@@ -63,7 +63,7 @@ export default function Resume() {
     </Document>
   </div>
   <div className="row">
-    <a href="../../assets/files/Resume.jpg" download='Resume.jpg'>
+    <a href={ResumePDF} download='Resume.pdf'>
       <button type="button">Download my Resume</button>
     </a> 
   </div>
