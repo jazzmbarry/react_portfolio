@@ -1,13 +1,24 @@
 import Froogal_Flyers from '../../assets/project_img/Froogal-Flyers.jpg';
 import the_powder_project from '../../assets/project_img/the_powder_project.jpg'
 import Portfolio from '../../assets/project_img/portfolio.png'
+import adoptABLE from '../../assets/project_img/adoptABLE.png'
 
 const projects =
 
 [
     {
+        "title": "adoptABLE",
+        "deploy": "https://adoptable-dv.herokuapp.com/",
+        "github_url": "https://github.com/austinxewell/adoptABLE",
+        "github": "adoptABLE",
+        "description": "An 'adopt a family' website specifically for victims of DV. The families would get to add anonymous family member information and then products needed (winter clothing, holiday gifts, Christmas tree, hygiene products) or assistance needed (seeking GED tutoring, transportation, gas cards, food cards, place to stay, etc). The donors would see the anonymous family information and choose to 'adopt' the family to help out with any items they can. DV shelters are overrun right now, in 2021 in Utah alone victims seeking assistance increased by 25-50%.",    
+        "technologies": "React, Apollo, MonogoDB, NPM, Node.js, Heroku, Express.js, Stripe, GraphQL, Google Fonts, Bulma",
+        "image": adoptABLE
+
+    },
+    {
         "title": "Portfolio",
-        "deploy": "www.google.com",
+        "deploy": "https://jazzmbarry.github.io/react_portfolio/",
         "github_url": "https://github.com/jazzmbarry/react_portfolio",
         "github": "react_portfolio",
         "description": "My portfolio built with React",    

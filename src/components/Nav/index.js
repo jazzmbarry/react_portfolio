@@ -8,7 +8,7 @@ export default function Nav(props) {
         <header>
         <nav className='row nav-wrapper'>
                         {tabs.map(tab => (
-                            <a   
+                                <a   
                                 href={'#' + tab.toLowerCase()}
                                 onClick={() => props.handlePageChange(tab)}
                                 key={tab}
