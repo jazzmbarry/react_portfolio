@@ -11,22 +11,21 @@ export default function Project() {
             </h2>
             </div>
 
-            <div className="row other-projects">
-            <h3 className='column'>Projects</h3>
-            </div>
-            <div className="projects-container">
+            <div className="other-projects">
+                <div className="projects-container">
                 {projects.map(project => (
                     <ProjectCard 
-                        key={project.title}
-                        title={project.title}
-                        deploy={project.deploy}
-                        github_url={project.github_url}
-                        github={project.github}
-                        description={project.description}
-                        technologies={project.technologies}
-                        image={project.image}
+                    key={project.title}
+                    title={project.title}
+                    deploy={project.deploy}
+                    github_url={project.github_url}
+                    github={project.github}
+                    description={project.description}
+                    technologies={project.technologies}
+                    image={project.image}
                     />
-                ))}
+                    ))}
+                    </div>
             </div>
         </section>
     );

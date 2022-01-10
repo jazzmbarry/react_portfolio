@@ -21,6 +21,7 @@ export default function Resume() {
         <li>React</li>
         <li>Version Control/Git</li>
         <li>Responsive Design</li>
+        <li>State</li>
       </ul>
     </div>
     <div className="column">
@@ -30,7 +31,8 @@ export default function Resume() {
         <li>NodeJS</li>
         <li>Express</li>
         <li>Model View Controller (MVC)</li>
-        <li>REST</li>
+        <li>REST APIs</li>
+        <li>GraphQL</li>
         <li>Progressive Web Applications (PWA)</li>
       </ul>
     </div>

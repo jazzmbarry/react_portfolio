@@ -68,11 +68,13 @@ form {
 
 .projectImage {
   opacity: .5;
+  width: 50%;
 }
 
 .projectImage:hover {
   opacity: .75;
   background-color: var(--darkBlue);
+  width: 51%;
 }
 
 .sectionHeader {

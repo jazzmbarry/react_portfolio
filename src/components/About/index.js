@@ -29,7 +29,7 @@ export default function About() {
                             <div className='row P1-container'>
 
                             <p className='column aboutP1'>
-                                My name is Matthew Barry. I will complete a coding bootcamp in January 2022(pending). I have a degree in Exercise Science with a minor in Music. I also have three different personal training certificates as well as my CPR/AED First Aid certificate.
+                                My name is Matthew Barry. I completed a coding bootcamp in January 2022. I have a degree in Exercise Science with a minor in Music. I also have three different personal training certificates as well as my CPR/AED First Aid certificate.
                             </p>
                             </div>
                             <div className='row P2-container'>

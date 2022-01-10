@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function ProjectCard(props) {
     return(
-        <article className=''>
-        <div className="row project-card">
-            <div className="column card-header">
+        <article className='row'>
+        <div className="column project-card">
+            <div className="card-header">
                 <div className="image-container">
                 <a className='projectImage' href={props.deploy} target="_blank" rel="noreferrer">
                     <img href={props.deploy} src={props.image} width="100%" alt={props.title} key={props.title} />                    
@@ -13,11 +13,11 @@ export default function ProjectCard(props) {
                 </div>
             </div>
             </div>
-            <div className='row'>
+            <div className='column'>
             <ul>
-                <li className='column'><b>GitHub:</b> <a className='gitRef' href={props.github_url}>{props.github}</a></li>
-                <li className='column'><b>Description: </b>{props.description}</li>
-                <li className='column'><b>Technologies/Tools: </b>{props.technologies}</li>
+                <li className=''><b>GitHub:</b> <a className='gitRef' href={props.github_url}>{props.github}</a></li>
+                <li className=''><b>Description: </b>{props.description}</li>
+                <li className=''><b>Technologies/Tools: </b>{props.technologies}</li>
             </ul>
         </div>
         </article>

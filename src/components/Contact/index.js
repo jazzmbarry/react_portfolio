@@ -50,15 +50,15 @@ function ContactForm() {
       <form className='' id="contact-form" onSubmit={handleSubmit}>
         <div className=''>
           <label htmlFor="name">Name:</label>
-          <input className='form' type="text" name="name" defaultValue={name} onBlur={handleChange} />
+          <input className='form' type="text" name="name" placeholder='Your Name' defaultValue={name} onBlur={handleChange} />
         </div>
         <div className=''>
           <label htmlFor="email">Email address:</label>
-          <input className='form' type="email" name="email" defaultValue={email} onBlur={handleChange} />
+          <input className='form' type="email" name="email" placeholder='Your Name' defaultValue={email} onBlur={handleChange} />
         </div>
         <div className=''>
           <label htmlFor="message">Message:</label>
-          <textarea className='form' name="message" rows="5" defaultValue={message} onBlur={handleChange} />
+          <textarea className='form' name="message" rows="5" placeholder='What would you like to ask?' defaultValue={message} onBlur={handleChange} />
         </div>
         {errorMessage && (
           <div>
