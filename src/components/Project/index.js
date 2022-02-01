@@ -2,6 +2,12 @@ import Froogal_Flyers from '../../assets/project_img/Froogal-Flyers.jpg';
 import the_powder_project from '../../assets/project_img/the_powder_project.jpg'
 import Portfolio from '../../assets/project_img/portfolio.png'
 import adoptABLE from '../../assets/project_img/adoptABLE.png'
+import runBuddy from '../../assets/project_img/run-buddy.jpg'
+import robotGladiators from '../../assets/project_img/robot-gladiator.jpg'
+import horiseon from '../../assets/project_img/horiseon.jpg'
+import portfolioGenerator from  '../../assets/project_img/portfolio-generator.png'
+import techBlog from '../../assets/project_img/techBlog.png'
+import noteTaker from '../../assets/project_img/noteTaker.png'
 
 const projects =
 
@@ -43,7 +49,60 @@ const projects =
         "technologies": "JavaScript, NodeJS, Express.js, MySQL2, Sequelize, Dotenv, CSS, HTML",
         "image": the_powder_project
     },
-
+    {
+        "title": "Tech Blog",
+        "deploy": "https://fierce-basin-90253.herokuapp.com/",
+        "github_url": "https://github.com/jazzmbarry/tech-blog",
+        "github": "tech-blog",
+        "description": "This is a blog website that you can make your user, post blog posts and make comments on other people's blog posts.",    
+        "technologies": "Heroku, bcrypt, chalk, sequelize, dotenv, express, express-handlebars, handlebars, mySQL, JavaScript, HTML, CSS",
+        "image": techBlog
+    },
+    {
+        "title": "Note Taker",
+        "deploy": "https://calm-anchorage-03310.herokuapp.com/",
+        "github_url": "https://github.com/jazzmbarry/note-taker",
+        "github": "note-taker",
+        "description": "A note-taker app that lets you organize your thoughts together on one webpage.",    
+        "technologies": "Express, Heroku, JavaScript, HTML, CSS",
+        "image": noteTaker
+    },
+    {
+        "title": "Run Buddy",
+        "deploy": "https://jazzmbarry.github.io/run-buddy/",
+        "github_url": "https://github.com/jazzmbarry/run-buddy",
+        "github": "run-buddy",
+        "description": "Demo website to help people connect with a personal trainer to start running",    
+        "technologies": "HTML, CSS",
+        "image": runBuddy
+    },
+    {
+        "title": "Robot Gladiators",
+        "deploy": "https://jazzmbarry.github.io/robot-gladiators/",
+        "github_url": "https://github.com/jazzmbarry/robot-gladiators",
+        "github": "robot-gladiators",
+        "description": "A game fighting ran through alerts on the browser. ",    
+        "technologies": "JavaScript, HTML",
+        "image": robotGladiators
+    },
+    {
+        "title": "Horiseon",
+        "deploy": "https://jazzmbarry.github.io/horiseon/",
+        "github_url": "https://github.com/jazzmbarry/horiseon",
+        "github": "horiseon",
+        "description": "Demo website to help build a social media marketing company to help other companies build their brand through search engine optimization, online reputation management and social media marketing.",    
+        "technologies": "HTML, CSS",
+        "image": horiseon
+    },
+    {
+        "title": "Portfolio Generator",
+        "deploy": "https://github.com/jazzmbarry/portfolio-generator",
+        "github_url": "https://github.com/jazzmbarry/portfolio-generator",
+        "github": "portfolio-generator",
+        "description": "A portfolio generator ran through Node.js. Once ran, this will ask a series of questions and output a basic HTML file with those answers.",    
+        "technologies": "Node.js, JavaScript, HTML, CSS",
+        "image": portfolioGenerator
+    },
     // {
     //     "title": "Final Project",
     //     "deploy": "",
@@ -52,8 +111,34 @@ const projects =
     //     "description": "",    
     //     "technologies": "",
     //     "image": null
-
-    // }
+    // },
+    // {
+    //     "title": "Final Project",
+    //     "deploy": "",
+    //     "github_url": "",
+    //     "github": "",
+    //     "description": "",    
+    //     "technologies": "",
+    //     "image": null
+    // },
+    // {
+    //     "title": "Final Project",
+    //     "deploy": "",
+    //     "github_url": "",
+    //     "github": "",
+    //     "description": "",    
+    //     "technologies": "",
+    //     "image": null
+    // },
+    // {
+    //     "title": "Final Project",
+    //     "deploy": "",
+    //     "github_url": "",
+    //     "github": "",
+    //     "description": "",    
+    //     "technologies": "",
+    //     "image": null
+    // },
 ]
 
 export default projects;
